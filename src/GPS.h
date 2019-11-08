@@ -5,8 +5,8 @@
 
 class GPS {
   public:
-    void setup();
-    void tick();
+    virtual void setup() = 0;
+    virtual void tick() = 0;
 };
 
 #endif
