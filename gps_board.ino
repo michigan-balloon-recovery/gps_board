@@ -6,7 +6,7 @@ GPS* gps_array[1];
 
 GPS* gps_factory(String type) {
   if(type == "ultimate") {
-    return new Ultimate;
+    return new Ultimate(&Serial, 9,10);
   }
   return nullptr;
 }
